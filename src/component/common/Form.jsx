@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = ({handleSubmit,handleChange,formData}) => {
+const Form = ({handleSubmit,handleChange,formData,from}) => {
   return (
     <div>
           <form onSubmit={handleSubmit}>
@@ -35,7 +35,7 @@ const Form = ({handleSubmit,handleChange,formData}) => {
           </div>
         </div>
         <div className='col col-md-8'>
-        <button type="submit" className="btn btn-success">Submit</button>
+       {from==='update' ? <button type="submit" className="btn btn-success">Update Student</button>:<button type="submit" className="btn btn-success"> Add Student</button>}
         </div>
        
       </form>

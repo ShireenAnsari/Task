@@ -43,7 +43,7 @@ const AddUser = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Create Student</h2>
-    <Form handleChange={handleChange} handleSubmit={handleSubmit} formData={formData}/>
+    <Form from={'Add'} handleChange={handleChange} handleSubmit={handleSubmit} formData={formData}/>
     </div>
   );
 };

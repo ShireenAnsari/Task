@@ -1,11 +1,9 @@
 // api.js
 import axios from 'axios';
-import { useState } from 'react';
 
-const BASE_URL = 'http://localhost:3001'; // Your mock API base URL
+const BASE_URL = 'http://localhost:3001'; 
 
 export const fetchStudents = async (id) => {
-  const [data,setData]=useState([])
   let url = `${BASE_URL}/students`;
   
   if (id) {
@@ -13,7 +11,7 @@ export const fetchStudents = async (id) => {
   }
 
   const response = await axios.get(url);
-  setData(response.data)
+ const data=response.data
   console.log(response.data);
   return data
 };
