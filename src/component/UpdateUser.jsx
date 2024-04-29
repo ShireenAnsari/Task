@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'; // Import useParams hook
-import { fetchStudents } from '../actions/Api';
+import { useNavigate, useParams } from 'react-router-dom'; // Import useParams hook
+import { fetchStudents, updateStudentAPI } from '../actions/Api';
 import Form from './common/Form';
 import { updateStudent } from '../Redux/StudentReducer';
 import { useDispatch, useSelector } from 'react-redux';
+import toast from 'react-hot-toast';
 const UpdateUser = () => {
   const dispatch = useDispatch();
-  const students = useSelector((state) => state.students.students);
   const [state,setstate]=useState([]);
+  const path=useNavigate();
   const { id } = useParams(); // Extract the 'id' parameter from the URL
   useEffect(() => {
     const fetchData = async () => {
@@ -20,10 +21,18 @@ const UpdateUser = () => {
     fetchData();
   }, [dispatch]);
   console.log(id)
+  const handleupdate = async(e) => {
+    e.preventDefault();
+    const data = await updateStudentAPI(id,state);
+    dispatch(updateStudent(data));
+    toast.success('Student added Succesfully');
+   path('/');
+    
+  };
   return (
     <div className="container mt-5">
     <h2 className="text-center mb-4">Update Student</h2>
-  <Form from={'update'} formData={state}/>
+  <Form from={'update'} handleSubmit={handleupdate} formData={state} setFormData={setstate}/>
   </div>
   )
 }

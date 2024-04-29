@@ -1,6 +1,13 @@
 import React from 'react'
 
-const Form = ({handleSubmit,handleChange,formData,from}) => {
+const Form = ({handleSubmit,formData,from,setFormData}) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
   return (
     <div>
           <form onSubmit={handleSubmit}>
