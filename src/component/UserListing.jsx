@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteStudentAPI, fetchStudents } from '../actions/Api';
 import { removeStudent, setStudents } from '../Redux/StudentReducer';
 import { useNavigate } from 'react-router-dom';
+import * as XLSX from 'xlsx';
+
+
 import toast from 'react-hot-toast';
 
 
@@ -19,8 +22,12 @@ const UserListing = () => {
   }, [dispatch]);
 
   const handleExportClick = () => {
-    // Logic to export data
-    console.log('Exporting data...');
+    // Convert students data to Excel format
+    const worksheet = XLSX.utils.json_to_sheet(students);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Students');
+    // Save the workbook as an Excel file
+    XLSX.writeFile(workbook, 'students.xlsx');
   };
   
   const handleAddClick = () => {
