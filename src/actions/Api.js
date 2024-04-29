@@ -1,4 +1,3 @@
-// api.js
 import axios from 'axios';
 
 const BASE_URL = 'http://localhost:3001'; 
@@ -17,7 +16,9 @@ export const fetchStudents = async (id) => {
 };
 
 export const addStudentAPI = async (studentData) => {
+  console.log(studentData)
   const response = await axios.post(`${BASE_URL}/students`, studentData);
+  console.log(response.data)
   return response.data;
 };
 

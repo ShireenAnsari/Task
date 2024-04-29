@@ -1,82 +1,15 @@
 {
   "students": [
     {
-      "id": "3",
-      "studentId": "STU003",
-      "name": "Alice ",
-      "class": "78",
-      "section": "D",
-      "classId": "CLS003",
-      "description": "Sed do eiusmod tempor incididunt",
-      "sectionIdName": "SEC003 - Gamma",
-      "marks": {
-        "maths": 92,
-        "science": 85,
-        "english": 88
-      }
-    },
-    {
-      "id": "3ce0",
-      "name": "ddjfhjnf",
-      "class": "4",
-      "section": "12",
-      "classId": "9",
-      "description": "this is my menue item",
-      "sectionIdName": "9"
-    },
-    {
-      "id": "ce94",
-      "name": "John ",
-      "class": "4",
-      "section": "12",
-      "classId": "9",
-      "description": "this is my menue item",
-      "sectionIdName": "9"
-    },
-    {
-      "id": "5f98",
-      "name": "John ",
-      "class": "4",
-      "section": "12",
-      "classId": "9",
-      "description": "this is my menue item",
-      "sectionIdName": "9"
-    },
-    {
-      "id": "83d1",
-      "name": "ddjfhjnf",
-      "class": "4",
-      "section": "12",
-      "classId": "9",
-      "description": "this is my menue item",
-      "sectionIdName": "9"
-    },
-    {
-      "id": "b2e0",
-      "name": "ddjfhjnf",
-      "class": "78",
-      "section": "smdnmd",
+      "id": "2033",
+      "studentId": "19bscs-30",
+      "name": "Shireen Ansari",
+      "class": "fkmf",
+      "section": "kwkjjkjd",
       "classId": "23",
-      "description": "jjdjfjdn",
-      "sectionIdName": "23"
-    },
-    {
-      "id": "e4cc",
-      "name": "ddjfhjnf",
-      "class": "78",
-      "section": "smdnmd",
-      "classId": "23",
-      "description": "jjdjfjdn",
-      "sectionIdName": "23"
-    },
-    {
-      "id": "0d50",
-      "name": "John ",
-      "class": "78",
-      "section": "smdnmd",
-      "classId": "23",
-      "description": "this is my menue item",
-      "sectionIdName": "23"
+      "description": "hhdnf jfbjrnf",
+      "sectionId": "1234",
+      "sectionname": "1234"
     }
   ]
 }

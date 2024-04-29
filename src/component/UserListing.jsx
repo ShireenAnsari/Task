@@ -64,11 +64,13 @@ const UserListing = () => {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
+            <th scope="col">Student Id</th>
             <th scope="col">Class</th>
             <th scope="col">Section</th>
             <th scope="col">Class ID</th>
             <th scope="col">Description</th>
-            <th scope="col">Section ID Name</th>
+            <th scope="col">Section ID</th>
+            <th scope="col">Section Name</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -76,12 +78,14 @@ const UserListing = () => {
           {students.map((student, index) => (
             <tr key={student.id}>
               <th scope="row">{index + 1}</th>
+              <td>{student.studentId}</td>
               <td>{student.name}</td>
               <td>{student.class}</td>
               <td>{student.section}</td>
               <td>{student.classId}</td>
               <td>{student.description}</td>
-              <td>{student.sectionIdName}</td>
+              <td>{student.sectionId}</td>
+              <td>{student.sectionname}</td>
               <td>
                 <button type="button" onClick={()=>path(`/user/update/${student.id}`)}  className="btn btn-primary me-2">Edit</button>
                 <button type="button" onClick={()=>handleDelete(student.id)}  className="btn btn-danger">Delete</button>

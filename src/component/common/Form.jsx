@@ -8,10 +8,15 @@ const Form = ({handleSubmit,formData,from,setFormData}) => {
       [name]: value
     }));
   };
+  // studentId
   return (
     <div>
           <form onSubmit={handleSubmit}>
         <div className="row mb-3">
+        <div className="col">
+            <label htmlFor="studentId" className="form-label">Student Id</label>
+            <input  type="text"  className="form-control" id="studentId" name="studentId" value={formData.studentId} onChange={handleChange} />
+          </div>
           <div className="col">
             <label htmlFor="name" className="form-label">Name</label>
             <input  type="text"  className="form-control" id="name" name="name" value={formData.name} onChange={handleChange} />
@@ -37,8 +42,12 @@ const Form = ({handleSubmit,formData,from,setFormData}) => {
             <input type="text" className="form-control" id="description" name="description" value={formData.description} onChange={handleChange} />
           </div>
           <div className="col">
-            <label htmlFor="sectionIdName" className="form-label">Section ID Name</label>
-            <input type="text" className="form-control" id="sectionIdName" name="sectionIdName" value={formData.sectionIdName} onChange={handleChange} />
+            <label htmlFor="sectionId" className="form-label">Section ID</label>
+            <input type="text" className="form-control" id="sectionId" name="sectionId" value={formData.sectionId} onChange={handleChange} />
+          </div>
+          <div className="col">
+            <label htmlFor="sectionname" className="form-label">Section Name</label>
+            <input type="text" className="form-control" id="sectionname" name="sectionname" value={formData.sectionname} onChange={handleChange} />
           </div>
         </div>
         <div className='col col-md-8'>
