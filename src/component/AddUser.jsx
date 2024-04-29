@@ -20,6 +20,11 @@ const AddUser = () => {
   });
   const handleSubmit = async(e) => {
     e.preventDefault();
+    if (Object.values(formData).some(value => !value)) {
+      toast.error('Please input all required fields');
+      return;
+  }
+  
     const data = await addStudentAPI(formData);
     dispatch(addStudent(data));
     toast.success('Student added Succesfully');

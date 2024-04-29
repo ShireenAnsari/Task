@@ -3,9 +3,9 @@
     {
       "id": "3",
       "studentId": "STU003",
-      "name": "Alice Johnson",
-      "class": "9th",
-      "section": "C",
+      "name": "Alice ",
+      "class": "78",
+      "section": "D",
       "classId": "CLS003",
       "description": "Sed do eiusmod tempor incididunt",
       "sectionIdName": "SEC003 - Gamma",
@@ -67,6 +67,15 @@
       "section": "smdnmd",
       "classId": "23",
       "description": "jjdjfjdn",
+      "sectionIdName": "23"
+    },
+    {
+      "id": "0d50",
+      "name": "John ",
+      "class": "78",
+      "section": "smdnmd",
+      "classId": "23",
+      "description": "this is my menue item",
       "sectionIdName": "23"
     }
   ]

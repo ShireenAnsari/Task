@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { PathsRoutes } from "./Routings/Route";
 import { Toaster } from "react-hot-toast";
 function App() {

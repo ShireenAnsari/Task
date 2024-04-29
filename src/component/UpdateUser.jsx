@@ -23,6 +23,10 @@ const UpdateUser = () => {
   console.log(id)
   const handleupdate = async(e) => {
     e.preventDefault();
+    if (Object.values(state).some(value => !value)) {
+      toast.error('Please input all required fields');
+      return;
+  }
     const data = await updateStudentAPI(id,state);
     dispatch(updateStudent(data));
     toast.success('Student updated Succesfully');
