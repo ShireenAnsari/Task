@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'; // Import useParams h
 import { fetchStudents, updateStudentAPI } from '../actions/Api';
 import Form from './common/Form';
 import { updateStudent } from '../Redux/StudentReducer';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 const UpdateUser = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const UpdateUser = () => {
     e.preventDefault();
     const data = await updateStudentAPI(id,state);
     dispatch(updateStudent(data));
-    toast.success('Student added Succesfully');
+    toast.success('Student updated Succesfully');
    path('/');
     
   };

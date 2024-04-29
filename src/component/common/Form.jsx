@@ -42,7 +42,7 @@ const Form = ({handleSubmit,formData,from,setFormData}) => {
           </div>
         </div>
         <div className='col col-md-8'>
-       {from==='update' ? <button type="submit" className="btn btn-success">Update Student</button>:<button type="submit" className="btn btn-success"> Add Student</button>}
+        <button type="submit" className="btn btn-success">{from==='update'? 'Update Student':'Add Student'}</button>
         </div>
        
       </form>

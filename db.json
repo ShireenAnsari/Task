@@ -1,36 +1,6 @@
 {
   "students": [
     {
-      "id": "1",
-      "studentId": "STU001",
-      "name": "Kelly",
-      "class": "10th",
-      "section": "A",
-      "classId": "CLS001",
-      "description": "Lorem ipsum dolor sit amet",
-      "sectionIdName": "SEC001 - Alpha",
-      "marks": {
-        "maths": 85,
-        "science": 90,
-        "english": 80
-      }
-    },
-    {
-      "id": "2",
-      "studentId": "STU002",
-      "name": "Jane ",
-      "class": "11th",
-      "section": "B",
-      "classId": "CLS002",
-      "description": "Consectetur adipiscing elit",
-      "sectionIdName": "SEC002 - Beta",
-      "marks": {
-        "maths": 75,
-        "science": 88,
-        "english": 82
-      }
-    },
-    {
       "id": "3",
       "studentId": "STU003",
       "name": "Alice Johnson",
@@ -46,47 +16,8 @@
       }
     },
     {
-      "id": "4",
-      "studentId": "STU004",
-      "name": "Bob Brown",
-      "class": "12th",
-      "section": "A",
-      "classId": "CLS004",
-      "description": "Ut labore et dolore magna aliqua",
-      "sectionIdName": "SEC004 - Delta",
-      "marks": {
-        "maths": 78,
-        "science": 92,
-        "english": 84
-      }
-    },
-    {
-      "id": "5",
-      "studentId": "STU005",
-      "name": "Emily Davis",
-      "class": "8th",
-      "section": "D",
-      "classId": "CLS005",
-      "description": "Duis aute irure dolor in reprehenderit",
-      "sectionIdName": "SEC005 - Epsilon",
-      "marks": {
-        "maths": 80,
-        "science": 75,
-        "english": 79
-      }
-    },
-    {
       "id": "3ce0",
       "name": "ddjfhjnf",
-      "class": "4",
-      "section": "12",
-      "classId": "9",
-      "description": "this is my menue item",
-      "sectionIdName": "9"
-    },
-    {
-      "id": "263a",
-      "name": "Doctor",
       "class": "4",
       "section": "12",
       "classId": "9",
@@ -119,6 +50,24 @@
       "classId": "9",
       "description": "this is my menue item",
       "sectionIdName": "9"
+    },
+    {
+      "id": "b2e0",
+      "name": "ddjfhjnf",
+      "class": "78",
+      "section": "smdnmd",
+      "classId": "23",
+      "description": "jjdjfjdn",
+      "sectionIdName": "23"
+    },
+    {
+      "id": "e4cc",
+      "name": "ddjfhjnf",
+      "class": "78",
+      "section": "smdnmd",
+      "classId": "23",
+      "description": "jjdjfjdn",
+      "sectionIdName": "23"
     }
   ]
 }

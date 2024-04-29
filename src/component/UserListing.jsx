@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchStudents } from '../actions/Api';
-import { setStudents } from '../Redux/StudentReducer';
+import { deleteStudentAPI, fetchStudents } from '../actions/Api';
+import { removeStudent, setStudents } from '../Redux/StudentReducer';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 
 const UserListing = () => {
@@ -24,11 +25,19 @@ const UserListing = () => {
   
   const handleAddClick = () => {
     // Logic to export data
-    console.log('Exporting data...');
+   
     path('/user/add')
     
   };
-
+  const handleDelete = async(id) => {
+   const confirm=window.confirm('Are you sure you want to delete?')
+   if(confirm)
+   {
+    const data = await deleteStudentAPI(id);
+    dispatch(removeStudent(id));
+    toast.success('Student removed successfully');
+   }
+  };
   return (
     <>
     <div className="container mt-5 ">
@@ -68,7 +77,7 @@ const UserListing = () => {
               <td>{student.sectionIdName}</td>
               <td>
                 <button type="button" onClick={()=>path(`/user/update/${student.id}`)}  className="btn btn-primary me-2">Edit</button>
-                <button type="button" className="btn btn-danger">Delete</button>
+                <button type="button" onClick={()=>handleDelete(student.id)}  className="btn btn-danger">Delete</button>
               </td>
             </tr>
           ))}

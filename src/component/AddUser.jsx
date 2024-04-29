@@ -5,9 +5,11 @@ import { addStudent } from '../Redux/StudentReducer';
 import toast from 'react-hot-toast';
 import Form from './common/Form';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 const AddUser = () => {
   const path=useNavigate();
+  const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     name: '',
     class: '',
