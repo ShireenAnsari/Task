@@ -5,18 +5,24 @@
       "studentId": "43",
       "name": "Hello there",
       "class": "djngmng",
-      "section": "kkdgmmng",
+      "section": "jdd",
       "classId": "8374",
       "description": "this is my menue item",
       "sectionId": "jdhfjfn",
       "sectionname": "ejhfjf"
+    },
+    {
+      "id": "1064",
+      "name": "dmfmf",
+      "class": "dmfmf",
+      "section": "dmd g"
     }
   ],
   "classes": [
     {
       "id": "1",
       "name": "Math",
-      "description": "Mathematics class"
+      "description": "djff"
     },
     {
       "id": "2",
@@ -27,12 +33,21 @@
       "id": "a119",
       "name": "xmcmx",
       "description": "xm"
+    },
+    {
+      "id": "91e4",
+      "name": "djmnfmnf",
+      "description": "jdnmfmnf"
     }
   ],
   "sections": [
     {
       "id": "2",
       "name": "Section 2"
+    },
+    {
+      "id": "0d82",
+      "name": "dmmdf"
     }
   ]
 }

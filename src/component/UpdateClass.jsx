@@ -10,7 +10,10 @@ import ClassForm from './Forms/FormClass';
 
 const UpdateClass = () => {
   const dispatch = useDispatch();
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    name:'',
+    description:''
+  });
   const path = useNavigate();
   const { id } = useParams(); 
 
@@ -25,8 +28,8 @@ const UpdateClass = () => {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
-    if (!formData.name) {
-      toast.error('Please input class name');
+    if (!formData.name || !formData.description) {
+      toast.error('Please all required fields');
       return;
     }
 

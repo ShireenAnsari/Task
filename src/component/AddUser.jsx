@@ -11,15 +11,9 @@ const AddUser = () => {
   const path=useNavigate();
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
-
-    studentId:'',
     name: '',
     class: '',
-    section: '',
-    classId: '',
-    description: '',
-    sectionId: '',
-    sectionname:''
+    section: ''
   });
   const handleSubmit = async(e) => {
     e.preventDefault();

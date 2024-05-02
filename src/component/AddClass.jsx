@@ -18,7 +18,7 @@ const AddClass = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name) {
-      toast.error('Please input class name');
+      toast.error('Please input all required fields');
       return;
     }
 
