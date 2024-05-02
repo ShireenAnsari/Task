@@ -42,7 +42,7 @@ const UpdateClass = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Update Class</h2>
-      <ClassForm handleSubmit={handleUpdate} formData={formData} setFormData={setFormData} />
+      <ClassForm from='update' handleSubmit={handleUpdate} formData={formData} setFormData={setFormData} />
     </div>
   );
 };

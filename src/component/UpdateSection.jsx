@@ -39,7 +39,7 @@ const UpdateSection = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Update Section</h2>
-      <SectionForm handleSubmit={handleUpdate} formData={formData} setFormData={setFormData} />
+      <SectionForm from='update' handleSubmit={handleUpdate} formData={formData} setFormData={setFormData} />
     </div>
   );
 };

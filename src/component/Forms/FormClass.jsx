@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ClassForm = ({ handleSubmit, formData, setFormData }) => {
+const ClassForm = ({ handleSubmit, formData, setFormData,from }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -25,7 +25,7 @@ const ClassForm = ({ handleSubmit, formData, setFormData }) => {
           </div>
         </div>
         <div className='col col-md-8'>
-          <button type="submit" className="btn btn-success">Add Class</button>
+          <button type="submit" className="btn btn-success">{from==='add'?'Add Class':'Update Class'}</button>
         </div>
       </form>
     </div>

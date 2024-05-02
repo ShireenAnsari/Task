@@ -31,7 +31,7 @@ const AddClass = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Create Class</h2>
-      <ClassForm handleSubmit={handleSubmit} formData={formData} setFormData={setFormData} />
+      <ClassForm from='Add' handleSubmit={handleSubmit} formData={formData} setFormData={setFormData} />
     </div>
   );
 };

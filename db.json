@@ -1,29 +1,19 @@
 {
   "students": [
     {
-      "id": "8192",
-      "studentId": "43",
-      "name": "Hello there",
-      "class": "djngmng",
-      "section": "jdd",
-      "classId": "8374",
-      "description": "this is my menue item",
-      "sectionId": "jdhfjfn",
-      "sectionname": "ejhfjf"
+      "id": "3ff1",
+      "name": "Shiri",
+      "class": "demo class",
+      "section": "B"
     },
     {
-      "id": "1064",
-      "name": "dmfmf",
-      "class": "dmfmf",
-      "section": "dmd g"
+      "id": "64a2",
+      "name": "xmcmx",
+      "class": "ABC",
+      "section": "C"
     }
   ],
   "classes": [
-    {
-      "id": "1",
-      "name": "Math",
-      "description": "djff"
-    },
     {
       "id": "2",
       "name": "Science",
@@ -43,7 +33,7 @@
   "sections": [
     {
       "id": "2",
-      "name": "Section 2"
+      "name": "Section 1"
     },
     {
       "id": "0d82",

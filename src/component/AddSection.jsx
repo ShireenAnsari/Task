@@ -30,7 +30,7 @@ const AddSection = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Create Section</h2>
-      <SectionForm handleSubmit={handleSubmit} formData={formData} setFormData={setFormData} />
+      <SectionForm from='add' handleSubmit={handleSubmit} formData={formData} setFormData={setFormData} />
     </div>
   );
 };

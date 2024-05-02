@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StudentSectionForm = ({ handleSubmit, formData, setFormData }) => {
+const StudentSectionForm = ({ handleSubmit, formData, setFormData,from }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -29,7 +29,7 @@ const StudentSectionForm = ({ handleSubmit, formData, setFormData }) => {
           </div>
         </div>
         <div className='col col-md-8'>
-          <button type="submit" className="btn btn-success">Add Student</button>
+          <button type="submit" className="btn btn-success">{from==='add'?'Add Student':'Update Student'}</button>
         </div>
       </form>
     </div>
