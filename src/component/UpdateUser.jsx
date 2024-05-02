@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'; 
 import { fetchStudents, updateStudentAPI } from '../actions/Api';
-import Form from './common/FormUser';
+import Form from './Forms/FormUser';
 import { updateStudent } from '../Redux/Reducers/StudentReducer';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';

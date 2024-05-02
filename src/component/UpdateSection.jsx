@@ -6,7 +6,7 @@ import { fetchSections, updateSectionAPI } from '../actions/Api';
 import { updateSection } from '../Redux/Reducers/SectionReducer';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
-import SectionForm from './common/FormSection';
+import SectionForm from './Forms/FormSection';
 
 const UpdateSection = () => {
   const dispatch = useDispatch();

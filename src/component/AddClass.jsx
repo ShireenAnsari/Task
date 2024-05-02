@@ -5,7 +5,7 @@ import { addClass } from '../Redux/Reducers/ClassReducer';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import ClassForm from './common/FormClass';
+import ClassForm from './Forms/FormClass';
 
 const AddClass = () => {
   const path = useNavigate();

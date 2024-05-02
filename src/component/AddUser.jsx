@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import { addStudentAPI } from '../actions/Api';
 import { addStudent } from '../Redux/Reducers/StudentReducer';
 import toast from 'react-hot-toast';
-import Form from './common/FormUser';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import StudentSectionForm from './common/FormUser';
+import StudentSectionForm from './Forms/FormUser';
 
 const AddUser = () => {
   const path=useNavigate();

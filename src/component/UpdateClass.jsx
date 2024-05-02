@@ -6,7 +6,7 @@ import { fetchClasses, updateClassAPI } from '../actions/Api';
 import { updateClass } from '../Redux/Reducers/ClassReducer';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
-import ClassForm from './common/FormClass';
+import ClassForm from './Forms/FormClass';
 
 const UpdateClass = () => {
   const dispatch = useDispatch();

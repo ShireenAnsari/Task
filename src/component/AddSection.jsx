@@ -5,7 +5,7 @@ import { addSection } from '../Redux/Reducers/SectionReducer';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import SectionForm from './common/FormSection';
+import SectionForm from './Forms/FormSection';
 
 const AddSection = () => {
   const path = useNavigate();
