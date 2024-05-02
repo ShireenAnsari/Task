@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const ClassForm = ({ handleSubmit, formData, setFormData,from }) => {
   const handleChange = (e) => {

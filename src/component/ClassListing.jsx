@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteClassAPI, fetchClasses } from "../actions/Api";
-import { removeClass, setClass } from "../Redux/Reducers/ClassReducer";
+import { removeClass, setClass } from "../Redux/Slices/ClassSlice";
 import { useNavigate } from "react-router-dom";
 import * as XLSX from "xlsx";
 import toast from "react-hot-toast";

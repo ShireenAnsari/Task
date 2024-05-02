@@ -1,11 +1,12 @@
 // AddSection.js
 import React, { useState } from 'react';
 import { addSectionAPI } from '../actions/Api';
-import { addSection } from '../Redux/Reducers/SectionReducer';
+
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import SectionForm from './Forms/FormSection';
+import { addSection } from '../Redux/Slices/SectionSlice';
 
 const AddSection = () => {
   const path = useNavigate();

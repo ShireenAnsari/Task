@@ -1,11 +1,12 @@
 // AddClass.js
 import React, { useState } from 'react';
 import { addClassAPI } from '../actions/Api';
-import { addClass } from '../Redux/Reducers/ClassReducer';
+
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import ClassForm from './Forms/FormClass';
+import { addClass } from '../Redux/Slices/ClassSlice';
 
 const AddClass = () => {
   const path = useNavigate();

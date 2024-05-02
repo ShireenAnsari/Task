@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'; 
 import { fetchSections, updateSectionAPI } from '../actions/Api';
 
-import { updateSection } from '../Redux/Reducers/SectionReducer';
+import { updateSection } from '../Redux/Slices/SectionSlice';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 import SectionForm from './Forms/FormSection';

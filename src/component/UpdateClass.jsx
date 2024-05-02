@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'; 
 import { fetchClasses, updateClassAPI } from '../actions/Api';
 
-import { updateClass } from '../Redux/Reducers/ClassReducer';
+import { updateClass } from '../Redux/Slices/ClassSlice';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 import ClassForm from './Forms/FormClass';
