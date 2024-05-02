@@ -1,15 +1,38 @@
 {
   "students": [
     {
-      "id": "2033",
-      "studentId": "19bscs-30",
-      "name": "Shireen Ansari",
-      "class": "fkmf",
-      "section": "kwkjjkjd",
-      "classId": "23",
-      "description": "hhdnf jfbjrnf",
-      "sectionId": "1234",
-      "sectionname": "1234"
+      "id": "8192",
+      "studentId": "43",
+      "name": "Hello there",
+      "class": "djngmng",
+      "section": "kkdgmmng",
+      "classId": "8374",
+      "description": "this is my menue item",
+      "sectionId": "jdhfjfn",
+      "sectionname": "ejhfjf"
+    }
+  ],
+  "classes": [
+    {
+      "id": "1",
+      "name": "Math",
+      "description": "Mathematics class"
+    },
+    {
+      "id": "2",
+      "name": "Science",
+      "description": "Science class"
+    },
+    {
+      "id": "a119",
+      "name": "xmcmx",
+      "description": "xm"
+    }
+  ],
+  "sections": [
+    {
+      "id": "2",
+      "name": "Section 2"
     }
   ]
 }

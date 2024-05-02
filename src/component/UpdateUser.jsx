@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'; // Import useParams hook
+import { useNavigate, useParams } from 'react-router-dom'; 
 import { fetchStudents, updateStudentAPI } from '../actions/Api';
-import Form from './common/Form';
-import { updateStudent } from '../Redux/StudentReducer';
+import Form from './common/FormUser';
+import { updateStudent } from '../Redux/Reducers/StudentReducer';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 const UpdateUser = () => {
   const dispatch = useDispatch();
   const [state,setstate]=useState([]);
   const path=useNavigate();
-  const { id } = useParams(); // Extract the 'id' parameter from the URL
+  const { id } = useParams(); 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchStudents(id);

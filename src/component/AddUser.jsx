@@ -1,11 +1,12 @@
 // CreateForm.js
 import React, { useState } from 'react';
 import { addStudentAPI } from '../actions/Api';
-import { addStudent } from '../Redux/StudentReducer';
+import { addStudent } from '../Redux/Reducers/StudentReducer';
 import toast from 'react-hot-toast';
-import Form from './common/Form';
+import Form from './common/FormUser';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import StudentSectionForm from './common/FormUser';
 
 const AddUser = () => {
   const path=useNavigate();
@@ -39,7 +40,7 @@ const AddUser = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Create Student</h2>
-    <Form from={'Add'} handleSubmit={handleSubmit} formData={formData} setFormData={setFormData}/>
+    <StudentSectionForm from={'Add'} handleSubmit={handleSubmit} formData={formData} setFormData={setFormData}/>
     </div>
   );
 };
